@@ -47,6 +47,9 @@ public class MemberController {
     @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
+
+        //AOP ... proxy로 만든 가짜 memberService 확인
+        System.out.println("memberService = " + memberService.getClass());
     }
 
     @GetMapping("/members/new")
