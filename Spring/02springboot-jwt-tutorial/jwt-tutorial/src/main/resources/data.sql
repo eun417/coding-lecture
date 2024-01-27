@@ -4,5 +4,6 @@ insert into users (username, password, nickname, activated) values ('admin', '$2
 insert into authority (authority_name) values ('ROLE_USER');
 insert into authority (authority_name) values ('ROLE_ADMIN');
 
+--권한정보 2개
 insert into user_authority (user_id, authority_name) values (1, 'ROLE_USER');
 insert into user_authority (user_id, authority_name) values (1, 'ROLE_ADMIN');
